@@ -14,7 +14,7 @@ class BlackListManager {
 
     private static BlackListManager manager;
 
-    private Lock writeLock = new ReentrantReadWriteLock().readLock();
+    private Lock writeLock = new ReentrantReadWriteLock().writeLock();
 
     private Lock readLock = new ReentrantReadWriteLock().readLock();
 
